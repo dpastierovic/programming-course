@@ -16,6 +16,10 @@ namespace Basics
 
             var rect = new Rectangle(3, 4);
             rect.GetArea();
+
+            RefValueTypes.ValueType();
+            RefValueTypes.ReferenceType();
+            RefValueTypes.StringType();
         }
     }
 
