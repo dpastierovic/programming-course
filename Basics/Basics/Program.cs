@@ -1,11 +1,73 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Basics
 {
     class Program
     {
+        delegate bool IsEven(int a);
+
         static void Main(string[] args)
+        {
+            var text = SomeText.LoremIpsum();
+            text = text.Replace('a', 'A');
+            Console.WriteLine(text);
+
+            Console.WriteLine();
+
+            text = SomeText.LoremIpsum();
+
+            var reversedText = text.Reverse();
+
+            Console.WriteLine(reversedText);
+
+            var removedUseless = text.RemoveUseless();
+
+            Console.WriteLine(removedUseless);
+
+            CustomAlmonds();
+
+            var number = 5;
+            var result = number.IsEven();
+            Console.WriteLine(result);
+
+            IsEven function = delegate (int a) { return a % 2 == 0; };
+            function = (a) => { return a % 2 == 0; };
+
+            text = text.Replace(",", "").Replace(".", "");
+            var words = text.Split(' ').ToList();
+
+            words = words.Where(v => v.StartsWith('l') || v.StartsWith('L')).ToList();
+
+            words = (from w in words where w.StartsWith('l') || w.StartsWith('L') select w).ToList();
+
+            Console.WriteLine("----------------------------Lorem Ipsum words----------------------------");
+
+            foreach(var word in words)
+            {
+                Console.WriteLine(word);
+            }
+
+            var loremCount = 0;
+            loremCount = words.Count(v => v == "Lorem" || v == "lorem");
+            Console.WriteLine($"Number of Lorem is {loremCount}");
+        }
+
+        public static int Count(List<string> list, Func<string, bool> predicate)
+        {
+            var count = 0;
+
+            foreach(var word in list)
+            {
+                if (predicate(word)) count++;
+            }
+
+            return count;
+        }
+
+
+        static void FirstLession()
         {
             Console.WriteLine("Hello World!");
 
@@ -20,6 +82,16 @@ namespace Basics
             RefValueTypes.ValueType();
             RefValueTypes.ReferenceType();
             RefValueTypes.StringType();
+        }
+
+        static void CustomAlmonds()
+        {
+            Almond myAlmond = new Almond(15, 5);
+            Almond yourAlmond = new Almond(5, 20);
+            /*Console.WriteLine(myAlmond.isAlmond());
+            Console.WriteLine(yourAlmond.isAlmond());*/
+
+            
         }
     }
 
