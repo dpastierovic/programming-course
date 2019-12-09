@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Basics.GenericTree;
+using Basics.Threading;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -10,48 +12,23 @@ namespace Basics
 
         static void Main(string[] args)
         {
-            var text = SomeText.LoremIpsum();
-            text = text.Replace('a', 'A');
-            Console.WriteLine(text);
-
-            Console.WriteLine();
-
-            text = SomeText.LoremIpsum();
-
-            var reversedText = text.Reverse();
-
-            Console.WriteLine(reversedText);
-
-            var removedUseless = text.RemoveUseless();
-
-            Console.WriteLine(removedUseless);
-
-            CustomAlmonds();
-
-            var number = 5;
-            var result = number.IsEven();
-            Console.WriteLine(result);
+            MyThreads.StartThreading();
+            /*var numbers = new List<int> { 10, 2, 3, 89, 45, -5, 1, 6, 15, 5, -6 };
 
             IsEven function = delegate (int a) { return a % 2 == 0; };
             function = (a) => { return a % 2 == 0; };
 
-            text = text.Replace(",", "").Replace(".", "");
-            var words = text.Split(' ').ToList();
+            var tree = new BinaryTree<int>((Value, value) => Value > value);
 
-            words = words.Where(v => v.StartsWith('l') || v.StartsWith('L')).ToList();
-
-            words = (from w in words where w.StartsWith('l') || w.StartsWith('L') select w).ToList();
-
-            Console.WriteLine("----------------------------Lorem Ipsum words----------------------------");
-
-            foreach(var word in words)
+            foreach (var number in numbers)
             {
-                Console.WriteLine(word);
+                tree.InsertValue(number);
             }
 
-            var loremCount = 0;
-            loremCount = words.Count(v => v == "Lorem" || v == "lorem");
-            Console.WriteLine($"Number of Lorem is {loremCount}");
+            tree.Print();*/
+
+            //Console.WriteLine(tree.ToString());
+
         }
 
         public static int Count(List<string> list, Func<string, bool> predicate)
@@ -84,14 +61,48 @@ namespace Basics
             RefValueTypes.StringType();
         }
 
-        static void CustomAlmonds()
+        static void SecondLesson()
         {
-            Almond myAlmond = new Almond(15, 5);
-            Almond yourAlmond = new Almond(5, 20);
-            /*Console.WriteLine(myAlmond.isAlmond());
-            Console.WriteLine(yourAlmond.isAlmond());*/
+            var text = SomeText.LoremIpsum();
+            text = text.Replace('a', 'A');
+            Console.WriteLine(text);
 
-            
+            Console.WriteLine();
+
+            text = SomeText.LoremIpsum();
+
+            var reversedText = text.Reverse();
+
+            Console.WriteLine(reversedText);
+
+            var removedUseless = text.RemoveUseless();
+
+            Console.WriteLine(removedUseless);
+
+            var number = 5;
+            var result = number.IsEven();
+            Console.WriteLine(result);
+
+            IsEven function = delegate (int a) { return a % 2 == 0; };
+            function = (a) => { return a % 2 == 0; };
+
+            text = text.Replace(",", "").Replace(".", "");
+            var words = text.Split(' ').ToList();
+
+            words = words.Where(v => v.StartsWith('l') || v.StartsWith('L')).ToList();
+
+            words = (from w in words where w.StartsWith('l') || w.StartsWith('L') select w).ToList();
+
+            Console.WriteLine("----------------------------Lorem Ipsum words----------------------------");
+
+            foreach (var word in words)
+            {
+                Console.WriteLine(word);
+            }
+
+            var loremCount = 0;
+            loremCount = words.Count(v => v == "Lorem" || v == "lorem");
+            Console.WriteLine($"Number of Lorem is {loremCount}");
         }
     }
 
