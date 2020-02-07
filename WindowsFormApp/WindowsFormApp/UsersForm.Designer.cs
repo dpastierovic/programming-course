@@ -29,242 +29,264 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UsersForm));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
+            this.dateTimePickerBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.textBoxPostalCode = new System.Windows.Forms.TextBox();
+            this.textBoxEmail = new System.Windows.Forms.TextBox();
+            this.richTextBoxAddInfo = new System.Windows.Forms.RichTextBox();
+            this.listBoxRegisteredUsers = new System.Windows.Forms.ListBox();
+            this.buttonAddUser = new System.Windows.Forms.Button();
+            this.buttonExportUsers = new System.Windows.Forms.Button();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelSurname = new System.Windows.Forms.Label();
+            this.labelBirthDate = new System.Windows.Forms.Label();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.labelPostalCode = new System.Windows.Forms.Label();
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelAddInfo = new System.Windows.Forms.Label();
+            this.groupBoxUser = new System.Windows.Forms.GroupBox();
+            this.groupBoxUserDatabase = new System.Windows.Forms.GroupBox();
+            this.groupBoxUser.SuspendLayout();
+            this.groupBoxUserDatabase.SuspendLayout();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(93, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(187, 20);
-            this.textBox1.TabIndex = 0;
+            this.textBoxName.Location = new System.Drawing.Point(124, 36);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(248, 22);
+            this.textBoxName.TabIndex = 0;
             // 
-            // textBox2
+            // textBoxSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(93, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 20);
-            this.textBox2.TabIndex = 1;
+            this.textBoxSurname.Location = new System.Drawing.Point(124, 71);
+            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(248, 22);
+            this.textBoxSurname.TabIndex = 1;
             // 
-            // dateTimePicker1
+            // dateTimePickerBirthDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(93, 85);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(187, 20);
-            this.dateTimePicker1.TabIndex = 2;
+            this.dateTimePickerBirthDate.Location = new System.Drawing.Point(124, 105);
+            this.dateTimePickerBirthDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
+            this.dateTimePickerBirthDate.Size = new System.Drawing.Size(248, 22);
+            this.dateTimePickerBirthDate.TabIndex = 2;
             // 
-            // textBox3
+            // textBoxAddress
             // 
-            this.textBox3.Location = new System.Drawing.Point(93, 111);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(186, 20);
-            this.textBox3.TabIndex = 3;
+            this.textBoxAddress.Location = new System.Drawing.Point(124, 137);
+            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(247, 22);
+            this.textBoxAddress.TabIndex = 3;
             // 
-            // textBox4
+            // textBoxPostalCode
             // 
-            this.textBox4.Location = new System.Drawing.Point(93, 137);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(187, 20);
-            this.textBox4.TabIndex = 4;
+            this.textBoxPostalCode.Location = new System.Drawing.Point(124, 169);
+            this.textBoxPostalCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPostalCode.Name = "textBoxPostalCode";
+            this.textBoxPostalCode.Size = new System.Drawing.Size(248, 22);
+            this.textBoxPostalCode.TabIndex = 4;
             // 
-            // textBox5
+            // textBoxEmail
             // 
-            this.textBox5.Location = new System.Drawing.Point(93, 163);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(186, 20);
-            this.textBox5.TabIndex = 5;
+            this.textBoxEmail.Location = new System.Drawing.Point(124, 201);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEmail.Name = "textBoxEmail";
+            this.textBoxEmail.Size = new System.Drawing.Size(247, 22);
+            this.textBoxEmail.TabIndex = 5;
             // 
-            // richTextBox1
+            // richTextBoxAddInfo
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(10, 217);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(269, 76);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
+            this.richTextBoxAddInfo.Location = new System.Drawing.Point(13, 267);
+            this.richTextBoxAddInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBoxAddInfo.Name = "richTextBoxAddInfo";
+            this.richTextBoxAddInfo.Size = new System.Drawing.Size(357, 93);
+            this.richTextBoxAddInfo.TabIndex = 6;
+            this.richTextBoxAddInfo.Text = "";
             // 
-            // listBox1
+            // listBoxRegisteredUsers
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(8, 19);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(270, 290);
-            this.listBox1.TabIndex = 7;
+            this.listBoxRegisteredUsers.FormattingEnabled = true;
+            this.listBoxRegisteredUsers.ItemHeight = 16;
+            this.listBoxRegisteredUsers.Location = new System.Drawing.Point(11, 23);
+            this.listBoxRegisteredUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxRegisteredUsers.Name = "listBoxRegisteredUsers";
+            this.listBoxRegisteredUsers.Size = new System.Drawing.Size(359, 356);
+            this.listBoxRegisteredUsers.TabIndex = 7;
             // 
-            // button1
+            // buttonAddUser
             // 
-            this.button1.Location = new System.Drawing.Point(10, 299);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(269, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Add user";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonAddUser.Location = new System.Drawing.Point(13, 368);
+            this.buttonAddUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAddUser.Name = "buttonAddUser";
+            this.buttonAddUser.Size = new System.Drawing.Size(359, 28);
+            this.buttonAddUser.TabIndex = 8;
+            this.buttonAddUser.Text = "Add user";
+            this.buttonAddUser.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // buttonExportUsers
             // 
-            this.button2.Location = new System.Drawing.Point(9, 319);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(269, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Export users to file";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonExportUsers.Location = new System.Drawing.Point(12, 393);
+            this.buttonExportUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonExportUsers.Name = "buttonExportUsers";
+            this.buttonExportUsers.Size = new System.Drawing.Size(359, 28);
+            this.buttonExportUsers.TabIndex = 9;
+            this.buttonExportUsers.Text = "Export users to file";
+            this.buttonExportUsers.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // labelName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Name";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(8, 32);
+            this.labelName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(45, 17);
+            this.labelName.TabIndex = 10;
+            this.labelName.Text = "Name";
             // 
-            // label2
+            // labelSurname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 58);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 13);
-            this.label2.TabIndex = 11;
-            this.label2.Text = "Surname";
+            this.labelSurname.AutoSize = true;
+            this.labelSurname.Location = new System.Drawing.Point(9, 71);
+            this.labelSurname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelSurname.Name = "labelSurname";
+            this.labelSurname.Size = new System.Drawing.Size(65, 17);
+            this.labelSurname.TabIndex = 11;
+            this.labelSurname.Text = "Surname";
             // 
-            // label3
+            // labelBirthDate
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(7, 85);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Date of Birth";
+            this.labelBirthDate.AutoSize = true;
+            this.labelBirthDate.Location = new System.Drawing.Point(9, 105);
+            this.labelBirthDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBirthDate.Name = "labelBirthDate";
+            this.labelBirthDate.Size = new System.Drawing.Size(87, 17);
+            this.labelBirthDate.TabIndex = 12;
+            this.labelBirthDate.Text = "Date of Birth";
             // 
-            // label4
+            // labelAddress
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 111);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(45, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Address";
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.Location = new System.Drawing.Point(9, 137);
+            this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(60, 17);
+            this.labelAddress.TabIndex = 13;
+            this.labelAddress.Text = "Address";
             // 
-            // label5
+            // labelPostalCode
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(4, 137);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Postal code";
+            this.labelPostalCode.AutoSize = true;
+            this.labelPostalCode.Location = new System.Drawing.Point(5, 169);
+            this.labelPostalCode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelPostalCode.Name = "labelPostalCode";
+            this.labelPostalCode.Size = new System.Drawing.Size(82, 17);
+            this.labelPostalCode.TabIndex = 14;
+            this.labelPostalCode.Text = "Postal code";
             // 
-            // label6
+            // labelEmail
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 163);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(32, 13);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Email";
+            this.labelEmail.AutoSize = true;
+            this.labelEmail.Location = new System.Drawing.Point(9, 201);
+            this.labelEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(42, 17);
+            this.labelEmail.TabIndex = 15;
+            this.labelEmail.Text = "Email";
             // 
-            // label7
+            // labelAddInfo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 189);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(73, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Additional info";
+            this.labelAddInfo.AutoSize = true;
+            this.labelAddInfo.Location = new System.Drawing.Point(9, 233);
+            this.labelAddInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAddInfo.Name = "labelAddInfo";
+            this.labelAddInfo.Size = new System.Drawing.Size(97, 17);
+            this.labelAddInfo.TabIndex = 16;
+            this.labelAddInfo.Text = "Additional info";
             // 
-            // groupBox1
+            // groupBoxUser
             // 
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.richTextBox1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(288, 332);
-            this.groupBox1.TabIndex = 17;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "User";
+            this.groupBoxUser.Controls.Add(this.labelName);
+            this.groupBoxUser.Controls.Add(this.labelAddInfo);
+            this.groupBoxUser.Controls.Add(this.buttonAddUser);
+            this.groupBoxUser.Controls.Add(this.textBoxName);
+            this.groupBoxUser.Controls.Add(this.labelEmail);
+            this.groupBoxUser.Controls.Add(this.textBoxSurname);
+            this.groupBoxUser.Controls.Add(this.labelPostalCode);
+            this.groupBoxUser.Controls.Add(this.dateTimePickerBirthDate);
+            this.groupBoxUser.Controls.Add(this.labelAddress);
+            this.groupBoxUser.Controls.Add(this.textBoxAddress);
+            this.groupBoxUser.Controls.Add(this.labelBirthDate);
+            this.groupBoxUser.Controls.Add(this.textBoxPostalCode);
+            this.groupBoxUser.Controls.Add(this.labelSurname);
+            this.groupBoxUser.Controls.Add(this.textBoxEmail);
+            this.groupBoxUser.Controls.Add(this.richTextBoxAddInfo);
+            this.groupBoxUser.Location = new System.Drawing.Point(16, 15);
+            this.groupBoxUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUser.Name = "groupBoxUser";
+            this.groupBoxUser.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUser.Size = new System.Drawing.Size(384, 409);
+            this.groupBoxUser.TabIndex = 17;
+            this.groupBoxUser.TabStop = false;
+            this.groupBoxUser.Text = "User";
             // 
-            // groupBox2
+            // groupBoxUserDatabase
             // 
-            this.groupBox2.Controls.Add(this.listBox1);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Location = new System.Drawing.Point(13, 351);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(287, 348);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "User Database";
+            this.groupBoxUserDatabase.Controls.Add(this.listBoxRegisteredUsers);
+            this.groupBoxUserDatabase.Controls.Add(this.buttonExportUsers);
+            this.groupBoxUserDatabase.Location = new System.Drawing.Point(17, 432);
+            this.groupBoxUserDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUserDatabase.Name = "groupBoxUserDatabase";
+            this.groupBoxUserDatabase.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUserDatabase.Size = new System.Drawing.Size(383, 428);
+            this.groupBoxUserDatabase.TabIndex = 18;
+            this.groupBoxUserDatabase.TabStop = false;
+            this.groupBoxUserDatabase.Text = "User Database";
             // 
             // UsersForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(313, 711);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.ClientSize = new System.Drawing.Size(417, 875);
+            this.Controls.Add(this.groupBoxUserDatabase);
+            this.Controls.Add(this.groupBoxUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UsersForm";
             this.Text = "User management";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.groupBoxUser.ResumeLayout(false);
+            this.groupBoxUser.PerformLayout();
+            this.groupBoxUserDatabase.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.DateTimePicker dateTimePickerBirthDate;
+        private System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.TextBox textBoxPostalCode;
+        private System.Windows.Forms.TextBox textBoxEmail;
+        private System.Windows.Forms.RichTextBox richTextBoxAddInfo;
+        private System.Windows.Forms.ListBox listBoxRegisteredUsers;
+        private System.Windows.Forms.Button buttonAddUser;
+        private System.Windows.Forms.Button buttonExportUsers;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelSurname;
+        private System.Windows.Forms.Label labelBirthDate;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.Label labelPostalCode;
+        private System.Windows.Forms.Label labelEmail;
+        private System.Windows.Forms.Label labelAddInfo;
+        private System.Windows.Forms.GroupBox groupBoxUser;
+        private System.Windows.Forms.GroupBox groupBoxUserDatabase;
     }
 }
 
