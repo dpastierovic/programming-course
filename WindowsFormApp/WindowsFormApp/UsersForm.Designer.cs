@@ -55,7 +55,7 @@
             // textBoxName
             // 
             this.textBoxName.Location = new System.Drawing.Point(124, 36);
-            this.textBoxName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(248, 22);
             this.textBoxName.TabIndex = 0;
@@ -63,7 +63,7 @@
             // textBoxSurname
             // 
             this.textBoxSurname.Location = new System.Drawing.Point(124, 71);
-            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxSurname.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxSurname.Name = "textBoxSurname";
             this.textBoxSurname.Size = new System.Drawing.Size(248, 22);
             this.textBoxSurname.TabIndex = 1;
@@ -71,7 +71,7 @@
             // dateTimePickerBirthDate
             // 
             this.dateTimePickerBirthDate.Location = new System.Drawing.Point(124, 105);
-            this.dateTimePickerBirthDate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePickerBirthDate.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePickerBirthDate.Name = "dateTimePickerBirthDate";
             this.dateTimePickerBirthDate.Size = new System.Drawing.Size(248, 22);
             this.dateTimePickerBirthDate.TabIndex = 2;
@@ -79,7 +79,7 @@
             // textBoxAddress
             // 
             this.textBoxAddress.Location = new System.Drawing.Point(124, 137);
-            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxAddress.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAddress.Name = "textBoxAddress";
             this.textBoxAddress.Size = new System.Drawing.Size(247, 22);
             this.textBoxAddress.TabIndex = 3;
@@ -87,7 +87,7 @@
             // textBoxPostalCode
             // 
             this.textBoxPostalCode.Location = new System.Drawing.Point(124, 169);
-            this.textBoxPostalCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxPostalCode.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxPostalCode.Name = "textBoxPostalCode";
             this.textBoxPostalCode.Size = new System.Drawing.Size(248, 22);
             this.textBoxPostalCode.TabIndex = 4;
@@ -95,7 +95,7 @@
             // textBoxEmail
             // 
             this.textBoxEmail.Location = new System.Drawing.Point(124, 201);
-            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(247, 22);
             this.textBoxEmail.TabIndex = 5;
@@ -103,7 +103,7 @@
             // richTextBoxAddInfo
             // 
             this.richTextBoxAddInfo.Location = new System.Drawing.Point(13, 267);
-            this.richTextBoxAddInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.richTextBoxAddInfo.Margin = new System.Windows.Forms.Padding(4);
             this.richTextBoxAddInfo.Name = "richTextBoxAddInfo";
             this.richTextBoxAddInfo.Size = new System.Drawing.Size(357, 93);
             this.richTextBoxAddInfo.TabIndex = 6;
@@ -114,7 +114,7 @@
             this.listBoxRegisteredUsers.FormattingEnabled = true;
             this.listBoxRegisteredUsers.ItemHeight = 16;
             this.listBoxRegisteredUsers.Location = new System.Drawing.Point(11, 23);
-            this.listBoxRegisteredUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBoxRegisteredUsers.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxRegisteredUsers.Name = "listBoxRegisteredUsers";
             this.listBoxRegisteredUsers.Size = new System.Drawing.Size(359, 356);
             this.listBoxRegisteredUsers.TabIndex = 7;
@@ -122,17 +122,18 @@
             // buttonAddUser
             // 
             this.buttonAddUser.Location = new System.Drawing.Point(13, 368);
-            this.buttonAddUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAddUser.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAddUser.Name = "buttonAddUser";
             this.buttonAddUser.Size = new System.Drawing.Size(359, 28);
             this.buttonAddUser.TabIndex = 8;
             this.buttonAddUser.Text = "Add user";
             this.buttonAddUser.UseVisualStyleBackColor = true;
+            this.buttonAddUser.Click += new System.EventHandler(this.buttonAddUser_Click);
             // 
             // buttonExportUsers
             // 
             this.buttonExportUsers.Location = new System.Drawing.Point(12, 393);
-            this.buttonExportUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonExportUsers.Margin = new System.Windows.Forms.Padding(4);
             this.buttonExportUsers.Name = "buttonExportUsers";
             this.buttonExportUsers.Size = new System.Drawing.Size(359, 28);
             this.buttonExportUsers.TabIndex = 9;
@@ -227,9 +228,9 @@
             this.groupBoxUser.Controls.Add(this.textBoxEmail);
             this.groupBoxUser.Controls.Add(this.richTextBoxAddInfo);
             this.groupBoxUser.Location = new System.Drawing.Point(16, 15);
-            this.groupBoxUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUser.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxUser.Name = "groupBoxUser";
-            this.groupBoxUser.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUser.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxUser.Size = new System.Drawing.Size(384, 409);
             this.groupBoxUser.TabIndex = 17;
             this.groupBoxUser.TabStop = false;
@@ -240,9 +241,9 @@
             this.groupBoxUserDatabase.Controls.Add(this.listBoxRegisteredUsers);
             this.groupBoxUserDatabase.Controls.Add(this.buttonExportUsers);
             this.groupBoxUserDatabase.Location = new System.Drawing.Point(17, 432);
-            this.groupBoxUserDatabase.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUserDatabase.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxUserDatabase.Name = "groupBoxUserDatabase";
-            this.groupBoxUserDatabase.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxUserDatabase.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxUserDatabase.Size = new System.Drawing.Size(383, 428);
             this.groupBoxUserDatabase.TabIndex = 18;
             this.groupBoxUserDatabase.TabStop = false;
@@ -256,7 +257,7 @@
             this.Controls.Add(this.groupBoxUserDatabase);
             this.Controls.Add(this.groupBoxUser);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UsersForm";
             this.Text = "User management";
             this.groupBoxUser.ResumeLayout(false);

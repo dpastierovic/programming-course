@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormApp.DataModel;
 
 namespace WindowsFormApp
 {
@@ -16,7 +17,7 @@ namespace WindowsFormApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UsersForm());
+            Application.Run(new UsersForm(new UserRepository()));
         }
     }
 }
